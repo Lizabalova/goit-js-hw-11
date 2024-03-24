@@ -32,7 +32,7 @@ function sendForm(evt) {
     const input = evt.target.elements.search.value.trim();
     if (input !== '') {
         window.onload = () => {
-            fetchPhotoFromPixabay()
+            fetchPhotoFromPixabay(input)
                 .then((photos) => {
                     renderPhotos(photos.hits);
                     hideLoader();
@@ -50,14 +50,6 @@ function sendForm(evt) {
                 });
         }
         window.onload();
-            form.reset();
-        } else {
-            iziToast.show({
-                message: 'Please complete the field!',
-                theme: 'dark',
-                progressBarColor: '#FFFFFF',
-                color: '#EF4040',
-                position: 'topRight',
-            });
-        }
+        form.reset();
     }
+}
