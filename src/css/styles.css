@@ -23,3 +23,40 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+body {
+  max-width: 1440px;
+  display: block;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #212121;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+input{
+  width: 371px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+  border: 1px solid #808080;
+  padding-left: 16px;
+}
+button{
+  padding: 8px 16px 8px 16px;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  border-radius: 8px;
+  gap: 10px;
+  width: 91px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: none;
+}
